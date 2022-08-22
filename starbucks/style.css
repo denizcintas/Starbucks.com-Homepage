@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+
+}
+
+.content .textbox h2 {
+
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbox span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textbox p {
+    color: #333;
+
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+.content .imgbox {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content .imgbox img {
+    max-width: 340px;
+
+}
+
+.kucukresim {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 50px;
+}
+
+.kucukresim li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 200 px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kucukresim li:hover {
+
+    transform: translateY(-30px);
+}
+
+.kucukresim li img {
+    max-width: 250px;
+
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    justify-content: center;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin: 15px 0;
+
+}
+
+.daire {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #017143;
+    clip-path: circle(830px at right 1000px);/* rengin yarısnı alıyoruz */
+
+}

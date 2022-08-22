@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="daire">
+
+        </div>
+
+        <header>
+
+            <a href="#"> <img src="img/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Sadece Kahve değil<br>
+                    Bu
+                    <span>Starbucks</span>
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio natus nisi consequatur mollitia
+                    libero, maxime sunt. Reprehenderit suscipit autem totam, est maiores dolore veniam laudantium hic
+                    incidunt harum, distinctio natus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+                    similique sunt officiis in, provident incidunt obcaecati, repellendus architecto, tempore aut
+                    repudiandae quos vitae! Repellendus laborum perferendis soluta neque iure odit.</p>
+                <a href="#"> Daha fazlası için.. </a>
+            </div>
+            <div class="imgbox">
+                <img src="img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="kucukresim">
+            <li><img src="img/thumb1.png" onclick="imgSilder('img/img1.png') ;daireRengiDegistirme('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSilder('img/img2.png') ;daireRengiDegistirme('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSilder('img/img3.png') ;daireRengiDegistirme('#d752b1')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/StarbucksTurkiye/" target="_blank"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="https://twitter.com/StarbucksTR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/starbucks_tr/?hl=tr" target="_blank"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+
+
+
+
+    <script>
+
+        function imgSilder(fotoDegistirme) {
+            document.querySelector(".starbucks").src = fotoDegistirme;
+        }
+        function daireRengiDegistirme(renk) {
+
+            const daire = document.querySelector(".daire");
+
+            daire.style.background = renk;
+
+        }
+
+    </script>
+</body>
+
+</html>
